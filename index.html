@@ -1,0 +1,215 @@
+<html>
+<head>
+	<title>TRAVEL PAGE</title>
+	<style>
+	.header{
+		background-color: linen;
+		padding: 20px;
+		text-align: center;
+		opacity: 0.5;
+	}
+
+	.btn{
+		font-size: 20px;
+		float: right;
+	}
+	.content{
+		background-color: black;
+		opacity: 0.8;
+		font-size: 20px;
+		padding: 20px;
+		color: white;
+		border: 10px solid black;
+		text-transform: uppercase;
+		}
+	.middle{
+		padding: 200px;
+		background-image: url("berlin.jpg");
+		text-align: center;
+		opacity: 0.5;
+		color: white;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.middle:hover{
+		opacity: 1.0;
+	}
+	#wrapper{
+		padding:50px;
+		background-color: white;
+		text-align: center;
+		align-items: center;
+		width: 1500px;
+		height: 1500px;
+		border: 1px solid black;
+		box-sizing: border-box 
+		background-color: white;
+		opacity: 0.9;
+	}
+	#hotel{
+
+	}
+	.styled-table: {
+		border-collapse: collapse;
+		margin-left:auto ;
+		margin-right: auto;
+		font-size: 0.9em;
+		font-style: italic;
+		font-family: sans-serif,courier,arial;
+		min-width: 400px;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	}
+	.styled-table thead tr{
+		background-color:#009879;
+        color:#ffffff;
+        text-align:left;
+    }
+    .styled-table th, 
+    .styled-table td{
+	    padding:12px 15px;
+	}
+	.styled-table tbody td{
+		border-bottom: 1px solid #dddddd;
+	}
+	
+	.styled-table tbody tr:last-of-type{
+		border-bottom:2px solid #009879;
+		}
+	.styled-table tr:hover{
+		background-color:yellowgreen;
+	}
+
+	.footer{
+		background-color: lightskyblue;
+		padding: 10px;
+		text-align: center;
+		font-size: 20px;
+		color: black;
+	}
+	nav{
+		float:right;
+	}
+	nav ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	nav li{
+		display: inline-block;
+		margin-left: 70px;
+		padding-top: 20px;
+		position: relative;
+	}
+	nav a{
+		color: #444;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	nav a:hover{
+		color: #000;
+	}
+	header::after{
+		content:"";
+		display: table;
+		clear: both;
+	}
+	nav a::before{
+		content: "";
+		display: block;
+		height: 5px;
+		background-color: #444;
+		position: absolute;
+		top: 0;
+		width: 0%;
+		transition: all ease-in-out 250ms;
+	}
+	nav a:hover::before{
+		width: 100%;
+	}
+	h1:{
+		font-size: 30px;
+	}
+
+</style>
+</head>
+<body>
+	<div class="header"><img src="logo.png" height="75" width="75">
+		<nav>
+			<ul>
+				<li><a href="homepage.html">HOME</a></li>
+				<li><a href="#hotel">HOTELS</a></li>
+				<li><a href="#wrapper">PLACES TO VISIT</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+		</nav>
+	</div>
+	<div class="middle"><h1 class="content">WELCOME TO MY FAVOURITE DESTINATION IN GERMANY. </h1></div>
+	<div><p class="content">Berlin is the capital of germany. It is located in east-germany</p>
+		<h1>5 Best Places to visit in Berlin</h1></div>
+	<div id="wrapper">
+	<ol>
+	    <li>
+	    	<h1>Brandenburger Tor</h1>
+	    	<img src="Brandenburger_Tor.jpg" width="100%" height="500">
+	    	<p>The Brandenburger Tor in Berlin is an early classicist triumphal gate that stands on the western flank of the square Pariser Platz in the Mitte district of Berlin.</p>
+	    </li>
+	    <li>
+	    	<h1>Reichtagsgebäude</h1>
+	    	<img src="Reichtagsgebäude.jpg" width="100%" height="500">
+	    	<p>The Reichstagsgebäude on the Platz der Republik in Berlin has been the seat of the German Bundestag since 1999. The Federal Assembly has also met here since 1994 to elect the German Federal President.</p>
+	    </li>
+	</ol>
+</div>
+<div id="hotel">
+	<table border="1" align="center">
+		<tr>
+			<th colspan="16">
+				<h2>BERLIN PLACES TO STAY</h2>
+		    </th>
+		</tr>
+	</table>
+	<table class="styled-table" border="1" align="center">
+		<thead>
+			<tr>
+				<th>Image</th>
+				<th>HOTEL NAME</th>
+				<th>PRICE</th> 
+				<th>FACILITY</th>
+			</tr>
+		</thead>
+		<tr>
+			<th><img src="Comfort Hotel Lichtenberg.jpg"></th>
+			<th>Comfort Hotel Lichtenberg</th>
+			<th>€ 67</th> 
+			<th>All-Time meals, Free Wi-Fi</th>
+		</tr>
+		<tr>
+			<th><img src="Hotel Palace Berlin.jpg"></th>
+			<th>Hotel Palace Berlin</th>
+			<th>€ 103</th> 
+			<th>All-Time meals, Free Wi-Fi</th>
+		</tr>
+		<tr>
+			<th><img src="Hotel Delta am Potsdamer Platz.jpg"></th>
+			<th>Hotel Delta am Potsdamer Platz</th>
+			<th>€ 50</th> 
+			<th>All-Time meals, Free Wi-Fi, near City Center</th>
+		</tr>
+		<tr>
+			<th><img src="Hampton Berlin.jpg"></th>
+			<th>Hampton Berlin</th>
+			<th>€ 104</th> 
+			<th>All-Time meals, Free Wi-Fi, Good Rating</th>
+		</tr>
+		<tr>
+			<th><img src="Titanic Hotel.jpg"></th>
+			<th>Titanic Hotel</th>
+			<th>€ 61</th> 
+			<th>All-Time meals, Free Wi-Fi, Good Rating, Good food</th>
+		</tr>
+	</table>
+	</div>
+	<br>
+	<div class="footer">To know about Berlin visit <a href="https://en.wikipedia.org/wiki/Berlin">here</a></div>
+</body>
+</html>
